@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for(endpoint='static', filename='project_style.css')}}">
+    <title>Upload Image</title>
+</head>
+<body>
+    <form method="post" action="/upload/" enctype="multipart/form-data">
+            <center>
+            <h3>Select CIFAR10 image to predict its label.</h3>
+            <input type="file", name="image_file", accept="image/*"></br>
+            <input type="submit", value="upload">
+        </center>
+    </form>
+</body>
+</html>
